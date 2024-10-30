@@ -18,6 +18,7 @@ header nav {
     background-color: #333;
     padding: 10px 20px;
     color: white;
+    flex-wrap: wrap;
 }
 
 .nav-links {
