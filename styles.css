@@ -250,10 +250,55 @@ footer {
     margin-top: 10px;
 }
 
-/* Responsive Footer */
+}
+/* Responsive Design */
 @media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
     .footer-content {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar input[type="text"] {
+        width: 100px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+
+    .hero-overlay p {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        font-size: 14px;
     }
 }
