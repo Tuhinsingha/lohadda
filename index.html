@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div> <!-- Header will be loaded here -->
+
+    <!-- Welcome Message -->
+    <div class="welcome-message">
+        <h2>Welcome to My Blog</h2>
+        <p>Discover insightful articles, stories, and updates.</p>
+    </div>
+
+    <!-- Image Slider -->
+    <section class="slider">
+        <div class="slides">
+            <img src="static\image.webp" alt="Image 1">
+            <img src="static\pic_1.jpg" alt="Image 2">
+            <img src="static\pic_2.jpg" alt="Image 3">
+            <img src="static\pic_3.jpg" alt="Image 4">
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="content">
+        <p>This is a sample static blog site.</p>
+    </section>
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+    <script src="script.js"></script>
+
+</body>
+</html>
