@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="loadHeaderFooter.js" defer></script>
+</head>
+<body>
+    <div id="header"></div> <!-- Header will be loaded here -->
+
+    <!-- Welcome Message -->
+    <div class="welcome-message">
+        <h2>Happy Diwali 2024</h2>
+        <p>ॐ करणां वदनां धोरां मुक्तकेशी चतुर्भुजाम् । कालिंकां दक्षिणां दिव्यां मुण्डमाला विभूषिताम्॥ शरणागत-दीनार्त-परित्राण-परायणे, सर्वस्यार्तिहरे देवि! नारायणि! नमोस्तुते।’</p>
+    </div>
+
+    <!-- Image Slider -->
+    <section class="slider">
+        <div class="slides">
+            <img src="static\image.webp" alt="Image 1">
+            <img src="static\pic_1.jpg" alt="Image 2">
+            <img src="static\pic_2.jpg" alt="Image 3">
+            <img src="static\pic_3.jpg" alt="Image 4">
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="content">
+        <p>This is a sample static blog site.</p>
+    </section>
+    <div id="footer"></div> <!-- Footer will be loaded here -->
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
 
