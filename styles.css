@@ -350,6 +350,14 @@ button.prev:hover, button.next:hover {
     }
 }
 
+.mobile p{
+    flex: 1;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+}
+
 
 /* Footer */
 footer {
