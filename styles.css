@@ -356,7 +356,6 @@ button.prev:hover, button.next:hover {
     color: #333;
     line-height: 1.6;
 }
-}
 
 
 /* Footer */
@@ -451,7 +450,6 @@ footer {
         align-items: center;
     }
 }
-
 @media (max-width: 480px) {
     .search-bar input[type="text"] {
         width: 100px;
