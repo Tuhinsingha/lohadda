@@ -115,8 +115,9 @@ header nav {
 }
 /* Hero Section */
 .hero {
-    background: url('static/man_welcome.webp') no-repeat center center/cover;
-    height: 100vh;
+    background: url('static/village_2.jpg') no-repeat center center;
+    background-size: cover; /* Or try 'contain' for less cropping */
+    height: 80vh; /* Adjust the height as needed for more of the image to show */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +125,7 @@ header nav {
 }
 
 .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for visibility */
     color: white;
     padding: 20px;
     text-align: center;
@@ -161,12 +162,12 @@ header nav {
 .slider {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    height: 400px;
+    max-width: 830px;
+    height: 450px;
     margin: 20px auto;
     overflow: hidden;
-    background-color: #000;
-    border-radius: 5px;
+    background-color: #0000000d;
+    border-radius: 80px;
 }
 
 .slides {
@@ -214,10 +215,141 @@ button.prev:hover, button.next:hover {
 }
 
 /* Content Section */
-.content {
+/* .content {
     text-align: center;
     padding: 20px;
+    line-height: 33px;
+    margin: 10px;
+} */
+/* Content Section with Paragraph and Advertisement */
+.content-section {
+    display: flex;
+    gap: 30px; /* Gap between paragraph and advertisement */
+    align-items: flex-start;
 }
+
+.paragraph-text {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a4a4a;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #007acc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.advertisement {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.advertisement h2 {
+    font-size: 24px;
+    color: #d9534f;
+    margin-bottom: 10px;
+    
+}
+
+.advertisement p {
+    font-size: 16px;
+    line-height: 2;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .paragraph-text,
+    .advertisement {
+        width: 100%;
+    }
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for each service */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.service-text {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-text h2 {
+    font-size: 28px;
+    color: #007acc; /* Accent color for the headings */
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-left: 4px solid #007acc;
+    padding-left: 10px;
+}
+
+.service-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-text {
+        padding: 10px;
+    }
+
+    .service-text h2 {
+        font-size: 24px;
+    }
+
+    .service-text p {
+        font-size: 14px;
+    }
+}
+
 
 /* Footer */
 footer {
@@ -278,7 +410,6 @@ footer {
     margin-top: 10px;
 }
 
-}
 /* Responsive Design */
 @media (max-width: 768px) {
     header nav {
