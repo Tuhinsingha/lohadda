@@ -350,7 +350,7 @@ button.prev:hover, button.next:hover {
     }
 }
 
-.mobile p{
+mobile {
     flex: 1;
     padding: 20px;
     color: #333;
